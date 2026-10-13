@@ -1,0 +1,86 @@
+{
+  "checked_at": "2026-10-13",
+  "sources": [
+    {
+      "id": "moe-2015",
+      "organization": "교육부",
+      "role": "2015 개정 교육과정 고시",
+      "url": "https://www.moe.go.kr/boardCnts/view.do?boardID=141&boardSeq=60747&lev=0&m=0404",
+      "accessed": "2026-10-13",
+      "rights_note": "Check specific linked item before reproduction"
+    },
+    {
+      "id": "moe-2022",
+      "organization": "교육부",
+      "role": "2022 개정 교육과정 고시",
+      "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=141&boardSeq=93458&lev=0&searchType=null",
+      "accessed": "2026-10-13",
+      "rights_note": "Check specific linked item before reproduction"
+    },
+    {
+      "id": "moe-2022-csat",
+      "organization": "교육부",
+      "role": "2022학년도 선택과목 구조",
+      "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=78242&lev=0&m=020402&opType=N&s=moe&statusYN=W",
+      "accessed": "2026-10-13"
+    },
+    {
+      "id": "moe-2028-reform",
+      "organization": "교육부",
+      "role": "2028학년도 대입 개편 확정",
+      "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=97551&lev=0",
+      "accessed": "2026-10-13"
+    },
+    {
+      "id": "moe-2028-subjects",
+      "organization": "교육부/평가원",
+      "role": "2028학년도 시험·문항 체제",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148938778",
+      "accessed": "2026-10-13"
+    },
+    {
+      "id": "moe-2028-sample",
+      "organization": "교육부",
+      "role": "통합사회·통합과학 예시문항",
+      "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=101085&lev=0",
+      "accessed": "2026-10-13"
+    },
+    {
+      "id": "kice-attendance",
+      "organization": "한국교육과정평가원",
+      "role": "수능 연도별 응시현황 공공데이터",
+      "url": "https://www.data.go.kr/data/15098904/fileData.do",
+      "accessed": "2026-10-13",
+      "rights_note": "KOGL Type 2: attribution, noncommercial"
+    },
+    {
+      "id": "kice-paper-notice",
+      "organization": "한국교육과정평가원",
+      "role": "문제지 복제·배포 제한 고지 예시",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20181115/go3/J_gup_mun_idnGiAw8.pdf",
+      "accessed": "2026-10-13",
+      "rights_note": "Copyright KICE; no unauthorized reproduction/distribution"
+    },
+    {
+      "id": "copyright-kogl",
+      "organization": "한국저작권위원회",
+      "role": "공공누리 유형별 이용조건",
+      "url": "https://www.copyright.or.kr/gov/nuri/guide/index.do",
+      "accessed": "2026-10-13"
+    },
+    {
+      "id": "ncic",
+      "organization": "국가교육과정정보센터",
+      "role": "교육과정 총론·각론 원문 확인",
+      "url": "https://ncic.re.kr/inv/org/list.do?step1=_1&step2=_13&step3=_37",
+      "accessed": "2026-10-13"
+    },
+    {
+      "id": "textbook-history",
+      "organization": "한국교과서협회",
+      "role": "교육과정별 개관",
+      "url": "https://www.ktbook.com/user/e-data/info/education/edu04.do",
+      "accessed": "2026-10-13"
+    }
+  ]
+}
