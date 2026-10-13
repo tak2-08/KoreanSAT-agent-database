@@ -60,6 +60,27 @@ Optional: provided data links may require their own rights review and access per
 4. Megastudy correct-rate data are calculated from its **scoring-service users** and should not be represented as an official nationally representative sample.
 5. Source work copyrights and noncommercial data constraints remain even when code is GPL. See `licenses/DATA-LICENSE.md`.
 
+## Extended verified research (2026-10-13)
+
+- `research/verified_policy_transitions.csv`: 19 source-linked, area-by-area policy transitions (2014 A/B, 2021 curriculum transition, 2022 choices, 2028 integrated exam and August mock).
+- `research/COHORT_EVIDENCE_AND_METHOD.md`: official-applicant vs actual-sitter differentiation, cohort ability comparison method, evidence gaps.
+- `research/RIGHTS_AND_PUBLICATION.md`: item-level publication permissions, EBS educator license scope, Megastudy/KICE provenance split, dummy ENSI credentials.
+- `scripts/import_official_attendance.py`: import a legally downloaded KICE official CSV into the **local** SQLite research catalog; 1994 two sessions remain separate, no invented ability or student-status metrics.
+- `scripts/link_clips_to_items.py`: hash-check/visual-review gate, then map authorized private PDF clips to exact `question_items.item_id` using paper identifiers. It never publishes images.
+
+```bash
+# Official CSV: obtain from https://www.data.go.kr/data/15098904/fileData.do
+python scripts/import_official_attendance.py --catalog workspace/research_catalog.sqlite --csv workspace/official_kice_attendance.csv
+python scripts/import_official_attendance.py --catalog workspace/research_catalog.sqlite --csv workspace/official_kice_attendance.csv --apply
+
+# After crop images are manually inspected, change image_assets.review_status to 'approved'
+python scripts/link_clips_to_items.py --catalog workspace/research_catalog.sqlite --agent-db workspace/suneung_agent.sqlite
+python scripts/link_clips_to_items.py --catalog workspace/research_catalog.sqlite --agent-db workspace/suneung_agent.sqlite --apply
+python -m unittest discover -s tests -v
+```
+
+These are *tools and researched milestones*, not a claim that all years have official ability statistics or that 161,024 original questions have been image-clipped.
+
 ## Credits & References
 
 Based on KICE examination and Ministry of Education official materials: see `research/source_registry.json` and `research/RESEARCH_NOTES.md`. Not affiliated with KICE, EBS or Megastudy.

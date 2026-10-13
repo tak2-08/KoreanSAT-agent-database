@@ -1,0 +1,20 @@
+effective_admission_year,area,change,confirmed_scope,curriculum,confidence,source_url
+1994,시험제도,대학수학능력시험 첫 실시;1993년에 두 차례 시행,본수능,제6차 교육과정과 시행시차 검증 필요,confirmed,https://www.data.go.kr/data/15098904/fileData.do
+2014,국어,수준별 A형/B형 시행,2014학년도 본수능,2009 개정 교육과정 영향 별도 확인,confirmed,https://www.korea.kr/briefing/policyBriefingView.do?newsId=148770380
+2014,영어,수준별 A형/B형 시행,2014학년도 본수능,2009 개정 교육과정 영향 별도 확인,confirmed,https://www.korea.kr/briefing/policyBriefingView.do?newsId=148770380
+2014,사회과학탐구,최대 선택 과목 수 3개에서 2개로 축소,2014학년도 본수능,교육과정 전환기,confirmed,https://www.korea.kr/briefing/policyBriefingView.do?newsId=148770380
+2014,사회탐구,생활과 윤리와 동아시아사 출제과목 신설,2014학년도 본수능,교육과정 전환기,confirmed,https://www.korea.kr/briefing/policyBriefingView.do?newsId=148770380
+2017,한국사,필수 응시 체제 도입,2017학년도 이후,수능 시험체제,confirmed_secondary,https://www.moe.go.kr/boardCnts/view.do?boardID=294&boardSeq=80163&lev=0&m=020402
+2018,영어,9등급 절대평가 시행,2018학년도 이후,수능 시험체제,confirmed,https://www.moe.go.kr/boardCnts/view.do?boardID=294&boardSeq=80163&lev=0&m=020402
+2021,교육과정,한국사 제외 전 영역에 2015 개정 교육과정 첫 적용,2021학년도 본수능,2015 개정,confirmed,https://www.moe.go.kr/boardCnts/view.do?boardID=294&boardSeq=81446&lev=0&m=020402
+2021,국어,화법과 작문/문학/독서/언어 출제범위,2021학년도 본수능,2015 개정,confirmed,https://www.moe.go.kr/boardCnts/view.do?boardID=294&boardSeq=73413&lev=0&m=020402
+2021,수학 가형,수학Ⅰ/미적분/확률과 통계; 기하 제외,2021학년도 본수능,2015 개정,confirmed,https://www.moe.go.kr/boardCnts/view.do?boardID=294&boardSeq=73413&lev=0&m=020402
+2021,수학 나형,수학Ⅰ/수학Ⅱ/확률과 통계,2021학년도 본수능,2015 개정,confirmed,https://www.moe.go.kr/boardCnts/view.do?boardID=294&boardSeq=73413&lev=0&m=020402
+2022,국어,독서/문학 공통 + 화법과 작문/언어와 매체 중 택1,2022~2027학년도,2015 개정,confirmed,https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=78242&lev=0&m=020402
+2022,수학,수학Ⅰ/수학Ⅱ 공통 + 확률과 통계/미적분/기하 중 택1,2022~2027학년도,2015 개정,confirmed,https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=78242&lev=0&m=020402
+2028,국어,화법과 언어/독서와 작문/문학 공통; 선택과목 폐지,2028학년도 이후,2022 개정,confirmed_as_of_2026_10_13,https://www.korea.kr/news/policyNewsView.do?newsId=148938778
+2028,수학,대수/미적분Ⅰ/확률과 통계 공통; 선택과목 폐지,2028학년도 이후,2022 개정,confirmed_as_of_2026_10_13,https://www.korea.kr/news/policyNewsView.do?newsId=148938778
+2028,사회과학탐구,통합사회·통합과학 각 25문항 40분; 두 과목 각각 성적 산출,2028학년도 이후,2022 개정,confirmed_as_of_2026_10_13,https://www.korea.kr/news/policyNewsView.do?newsId=148938778
+2028,직업탐구,성공적인 직업생활 25문항 40분; 선택과목 폐지,2028학년도 이후,2022 개정,confirmed_as_of_2026_10_13,https://www.korea.kr/news/policyNewsView.do?newsId=148938778
+2028,제2외국어한문,20문항 30분으로 축소,2028학년도 이후,2022 개정,confirmed_as_of_2026_10_13,https://www.korea.kr/news/policyNewsView.do?newsId=148938778
+2028,모의평가,하반기 평가원 모의평가 9월에서 8월로 이동,2028학년도 수능 대비 2027년 시행부터,2022 개정,confirmed_as_of_2026_10_13,https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=103113&lev=0&m=020402
