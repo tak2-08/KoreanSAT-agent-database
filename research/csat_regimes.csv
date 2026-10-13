@@ -1,0 +1,6 @@
+start_admission_year,end_admission_year,regime_id,description,verification_status,features,source_id
+1994,2004,legacy,초기 대학수학능력시험 체제,needs_year_verification,입학학년도와 시행연도를 구별해야 한다,kice-attendance
+2005,2013,pre_2014,7차~개정 교육과정 전환기 수능,needs_year_verification,세부 과목·수준과 교육과정은 학년도별 시행계획 검증 필요,ncic
+2014,2021,pre_2022,"2014 이후 수능 제도, 일부 과목의 체제 변화",needs_year_verification,연도별 영어 절대평가 등 과목별 세부 변화를 확인해야 한다,ncic
+2022,2027,common_plus_elective,"국어/수학 공통+선택, 사과탐 17과목 최대 2과목",confirmed,"국어 화법과 작문/언어와 매체, 수학 확률과 통계/미적분/기하",moe-2022-csat
+2028,2099,integrated,"국어·수학·탐구 선택과목 폐지, 통합사회·통합과학",confirmed_as_of_2026_10_13,"탐구 각 25문항 40분, 심화수학 제외",moe-2028-reform
