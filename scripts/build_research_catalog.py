@@ -61,7 +61,7 @@ def build(out,source_skill=None):
       # never infer KICE solely from its EBSi platform.
       kind=('모의평가' if ('모평' in (title or '') or '모의평가' in (title or '')) else ('대학수학능력시험' if '수능' in (title or '') else '학력평가/기타'))
       rights='KICE (subject to exam identification)' if ('평가원' in (title or '') or ('수능' in (title or '') and '모평' not in (title or ''))) else 'Original exam issuer (unverified)'
-      c.execute('INSERT INTO exam_catalog(host_provider,source_page,record_id,calendar_year,admission_year,exam_month,grade,area,subject,title,host_record_url,original_rights_holder,exam_type,validation_status,rights_status) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',('EBSi','https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperList.ebs?targetCd=D300',str(no),year,year+1 if year else None,month,grade,area,subj,title,url,rights,kind,'bibliography_only','source_rights_reserved'))
+      c.execute('INSERT INTO exam_catalog(host_provider,source_page,record_id,calendar_year,admission_year,exam_month,grade,area,subject,title,host_record_url,original_rights_holder,exam_type,validation_status,rights_status) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',('EBSi','https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperList.ebs?targetCd=D300',str(no),year,(year+{'고1':3,'고2':2,'고3':1}.get(grade,1)) if year else None,month,grade,area,subj,title,url,rights,kind,'bibliography_only','source_rights_reserved'))
       exam_id=c.execute('SELECT last_insert_rowid()').fetchone()[0]
       for typ,src_url,sha in eb.execute('SELECT asset_type,url,sha256 FROM assets WHERE paper_no=?',(no,)):
        if not src_url or not src_url.startswith(('https://','http://')):continue
