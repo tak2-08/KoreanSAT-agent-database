@@ -1,0 +1,27 @@
+# Source code is GPL; upstream source works/data are NEVER relicensed by this project.
+*.sqlite3
+*.db
+*.sqlite
+*.sqlite-*
+*.jsonl
+*.skill
+*.pdf
+*.hwp
+*.hwpx
+*.xlsx
+*.xls
+*.png
+*.jpg
+*.webp
+/data/*.db
+/workspace/
+/private/
+/cache/
+/.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+# Explicitly track only metadata-built DB below when rights & provenance verified
+!/data/research_catalog.sqlite
