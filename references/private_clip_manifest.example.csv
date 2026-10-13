@@ -1,0 +1,3 @@
+exam_id,paper_no,question_no,kind,pdf_path,source_url,page,x0,y0,x1,y1
+1,DUMMY_PAPER_ID,1,question,workspace/source_document_authorized.pdf,https://example.org/source.pdf,1,0.05,0.10,0.48,0.46
+1,DUMMY_PAPER_ID,1,explanation,workspace/source_explanation_authorized.pdf,https://example.org/solution.pdf,1,0.50,0.10,0.96,0.46

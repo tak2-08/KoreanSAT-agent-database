@@ -81,6 +81,20 @@ python -m unittest discover -s tests -v
 
 These are *tools and researched milestones*, not a claim that all years have official ability statistics or that 161,024 original questions have been image-clipped.
 
+## Batch clipping and measured content coverage
+
+The uploaded user archive was audited by SQL: **161,024** question records, of which **103,788** have a stem of at least 20 characters, **134,771** a solution of at least 20 characters, **77,258** a non-NULL answer, and **37,819** a Megastudy-service sample rate. These are **presence checks, not accuracy or permissions clearance** (see `references/QA_DATA_2026-10-13.md`).
+
+```bash
+python scripts/report_question_coverage.py --db workspace/suneung_agent.sqlite
+# Copy the sample CSV, fill with approved PDFs and manually verified coordinates.
+cp references/private_clip_manifest.example.csv workspace/clip_manifest.csv
+python scripts/batch_clip_manifest.py --catalog workspace/research_catalog.sqlite --manifest workspace/clip_manifest.csv
+python scripts/batch_clip_manifest.py --catalog workspace/research_catalog.sqlite --manifest workspace/clip_manifest.csv --apply --rights-confirmed
+```
+
+A checked **2014 applicant cohort composition** from a Ministry/KICE announcement is preserved in `research/verified_cohort_composition.csv`. Do not confuse applicant totals with examinee totals.
+
 ## Credits & References
 
 Based on KICE examination and Ministry of Education official materials: see `research/source_registry.json` and `research/RESEARCH_NOTES.md`. Not affiliated with KICE, EBS or Megastudy.
