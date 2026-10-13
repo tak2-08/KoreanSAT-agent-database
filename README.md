@@ -13,6 +13,9 @@
 - Per-item PDF clipping integration: `scripts/clip_question.py` (explicit page and bounding box; local images only, rights confirmation required).
 - Separate Megastudy statistics integration script retains its *actual publisher and sample frame*; its source values are never relabeled as KICE nationwide correct rates.
 
+
+**Year convention:** `calendar_year` = year of EBSi mock administration; `admission_year` = projected university entry year for grade 1/2/3 (grade 1: +3, grade 2: +2, grade 3: +1). It is NOT a claim that a grade 1/2 mock is the official CSAT for that university year.
+
 ## Setup
 
 ```bash
