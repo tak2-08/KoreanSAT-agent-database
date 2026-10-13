@@ -16,6 +16,15 @@
 
 **Year convention:** `calendar_year` = year of EBSi mock administration; `admission_year` = projected university entry year for grade 1/2/3 (grade 1: +3, grade 2: +2, grade 3: +1). It is NOT a claim that a grade 1/2 mock is the official CSAT for that university year.
 
+## Ready-made metadata DB
+
+The repository includes `data/research_catalog.sqlite.gz`, a reproducible bibliographic SQLite catalog with 7,200 exam records, 17,915 source-asset links and 123 official document records. It does **not** contain copied exam questions or solutions.
+
+```bash
+gzip -dk data/research_catalog.sqlite.gz
+python scripts/validate_research.py --catalog data/research_catalog.sqlite
+```
+
 ## Setup
 
 ```bash
