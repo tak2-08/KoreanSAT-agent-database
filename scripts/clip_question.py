@@ -41,6 +41,6 @@ def main():
  if not c.execute('select 1 from exam_catalog where exam_id=?',(a.exam_id,)).fetchone():ap.error('Exam ID not found in catalog')
  # linking is explicit; image is always private/unverified even if copy is locally authorized
  c.execute('''INSERT INTO image_assets(exam_id,question_no,asset_kind,source_pdf_url,pdf_page_zero_based,x0_norm,y0_norm,x1_norm,y1_norm,local_image_path,sha256,rights_status,review_status)
- VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)''',(a.exam_id,a.question,a.kind,a.source_url,a.page-1,x0,y0,x1,y1,str(output),sha,'private_copy_not_for_redistribution','pending_manual_visual_review'))
+ VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)''',(a.exam_id,a.question,a.kind,a.source_url,a.page-1,x0,y0,x1,y1,str(output),sha,'private_copy_not_for_redistribution','pending_manual_visual_review'))
  c.commit();print('Saved private crop:',output,'SHA256',sha,'linked row',c.execute('select last_insert_rowid()').fetchone()[0]);c.close()
 if __name__=='__main__':main()
